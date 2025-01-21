@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: white;
+    background-color: #1b1b32;
+    font-family: Lato, sans-serif;
+    margin-top: 40px;
+}
+
+h1 {
+    color: #1b1b32;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin: 20px 0; 
+}
+
+.aplicacion-tareas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo de freeCodeCamp */
+
+.freecodecamp-logo-contenedor {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.freecodecamp-logo {
+    width: 400px;
+    height: 50px;
+}
+
+/* Listas de Tareas */
+
+.tareas-lista-principal {
+    width: 600px;
+    min-height: 500px;
+    background-color: #d0d0d5;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 26px;
+}
+
+@media (max-width: 768px) {
+    .tarea-formulario {
+        width: 100%;
+    }
+
+    .tarea-input {
+        width: 90%;
+        font-size: 16px;
+        padding: 12px 28px 12px 12px;
+    }
+
+    .tarea-boton {
+        padding: 14px;
+        font-size: 16px;
+        width: 90%;
+    }
+
+    .tarea-formulario ul {
+        width: 100%;
+    }
+
+    .tarea-formulario li {
+        width: 90%;
+    }
+
+    .mostrar-completadas-boton {
+        width: 90%;
+    }
+}
+
+/* Contenedor del logo */
+
+.freecodecamp-logo-contenedor {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos generales para el logo */
+
+.freecodecamp-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query para Celulares (480px y menos) */
+
+@media (max-width: 480px) {
+    .freecodecamp-logo {
+        width: auto; /* Ajusta el tamaño según sea necesario */
+        height: auto;
+        margin: 0 auto; /* Centra el logo horizontalmente */
+        display: block;
+    }
+
+    .tareas-lista-principal h1 {
+        font-size: 20px; /* Ajusta el tamaño del título si es necesario */
+    }
+}
